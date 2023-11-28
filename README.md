@@ -1,6 +1,6 @@
-# enabrzk-init
+# Todo App
 
-### Установить зависимости:
+### Deploy
 
 ```bash
 
@@ -15,3 +15,5 @@ npm install
 npm run start
 
 ```
+
+
