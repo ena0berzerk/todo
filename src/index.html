@@ -6,6 +6,47 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Ena Berzerk Starting Project</h1>
+    <div class="container">
+      <h1>Td.</h1>
+      <form class="form-task" action="#">
+        <label for="title">Title:</label>
+        <input
+          type="text"
+          name="title"
+          id="title"
+          autofocus
+          autocomplete="off"
+        />
+
+        <label for="description">Description:</label>
+        <textarea
+          name="description"
+          id="description"
+          cols="20"
+          rows="5"
+        ></textarea>
+
+        <label for="priority">Priority</label>
+        <select id="priority" name="select">
+          <option value="regular" selected>Regular</option>
+          <option value="high">High</option>
+        </select>
+
+        <label for="due-date">Due date:</label>
+        <input id="due-date" type="date" />
+
+        <label for="set-folder">Folder</label>
+        <select id="set-folder" name="set-folder">
+          <option value="default" selected>Default</option>
+        </select>
+        <button id="add-task" type="submit">Add task</button>
+      </form>
+
+      <form class="form-folder" action="#">
+        <label for="folder">Folder</label>
+        <input type="text" name="folder" id="folder" />
+        <button id="add-folder" type="submit">Add folder</button>
+      </form>
+    </div>
   </body>
 </html>
