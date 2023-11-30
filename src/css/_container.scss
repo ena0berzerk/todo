@@ -1,4 +1,12 @@
+@use '_palette';
+
 .container {
-  width: 800px;
-  margin: 0 auto;
+  height: 70vh;
+  width: 700px;
+  padding: 21px;
+  margin: 5% auto;
+  border: 1px solid palette.$main;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.15) 0px 3px 6px 0px;
 }
