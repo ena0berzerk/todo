@@ -8,7 +8,6 @@ export function newTask() {
   const createTask = Todo(
     formTask.title.value,
     formTask.description.value,
-    formTask.priority.value,
     formTask.dueDate.value
   );
   tasksList.push(createTask);
@@ -19,7 +18,7 @@ export default function submitFormTask() {
   formTask.form.addEventListener('submit', (_) => {
     _.preventDefault();
     newTask();
-    todoElement();
+    todoElement(tasksList);
 
     console.log(tasksList);
     formTask.form.reset();

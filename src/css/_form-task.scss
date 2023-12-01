@@ -3,11 +3,79 @@
   flex-direction: column;
   width: 300px;
   gap: 12px;
-  border: 1px solid black;
   padding: 12px;
+  margin: 0 auto;
 
+  // submit btn
   #add-task {
+    margin-top: 8px;
     cursor: pointer;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 2px 16px;
+    height: 38px;
+    min-width: 96px;
+    min-height: 38px;
+    border: none;
+    color: #fff;
+    background-color: rgb(88, 101, 242);
+    transition:
+      background-color 0.17s ease,
+      color 0.17s ease;
+    &:hover {
+      background-color: rgb(71, 82, 196);
+    }
+  }
+
+  input {
+    font-size: 14px;
+    border-radius: 6px;
+    line-height: 1.5;
+    padding: 5px 10px;
+    transition:
+      box-shadow 100ms ease-in,
+      border 100ms ease-in,
+      background-color 100ms ease-in;
+    border: 2px solid #dee1e2;
+    color: rgb(14, 14, 16);
+    background: #dee1e2;
+    display: block;
+    height: 36px;
+    &:hover {
+      border-color: #ccc;
+    }
+    &:focus {
+      border-color: #9147ff;
+      background: #fff;
+    }
+  }
+
+  textarea {
+    font-size: 14px;
+    border-radius: 6px;
+    line-height: 1.5;
+    resize: none;
+    padding: 5px 10px;
+    transition:
+      box-shadow 100ms ease-in,
+      border 100ms ease-in,
+      background-color 100ms ease-in;
+    border: 2px solid #dee1e2;
+    color: rgb(14, 14, 16);
+    background: #dee1e2;
+    display: block;
+    &:hover {
+      border-color: #ccc;
+    }
+    &:focus {
+      border-color: #9147ff;
+      background: #fff;
+    }
   }
 }
 
@@ -16,4 +84,9 @@
   width: 92px;
   cursor: pointer;
   color: #323232;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: rgb(88, 101, 242);
+  }
 }

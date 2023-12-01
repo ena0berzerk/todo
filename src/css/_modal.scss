@@ -10,11 +10,14 @@
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 
   .modal-content {
+    animation-name: animatetop;
+    animation-duration: 0.5s;
+
     background-color: #fefefe;
     margin: 12% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 35%;
+    width: 18%;
     border-radius: 5px;
     box-shadow:
       rgba(0, 0, 0, 0) 0px 0px 0px 0px,
@@ -33,5 +36,16 @@
         cursor: pointer;
       }
     }
+  }
+}
+
+@keyframes animatetop {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
   }
 }

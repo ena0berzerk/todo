@@ -14,29 +14,37 @@
     gap: 12px;
     margin-bottom: 12px;
   }
+
   .todo-done-border {
     border: 3px solid #6f6f6f;
   }
-  .todo-high-priority {
-    border: 3px solid red;
+
+  .p-done {
+    text-decoration: line-through #6f6f6f;
+    color: #6f6f6f;
   }
-}
 
-.p-done {
-  text-decoration: line-through #6f6f6f;
-  color: #6f6f6f;
-}
+  .circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    display: inline-block;
+    border: 3px solid palette.$main;
+    cursor: pointer;
+  }
+  .circle-done {
+    background-color: #6f6f6f;
+    border-color: #6f6f6f;
+  }
 
-.circle {
-  height: 24px;
-  width: 24px;
-  border-radius: 100%;
-  display: inline-block;
-  border: 3px solid palette.$main;
-  cursor: pointer;
-}
+  .description-p {
+    font-size: 18px;
+    margin-top: 12px;
+  }
 
-.circle-done {
-  background-color: #6f6f6f;
-  border-color: #6f6f6f;
+  .date-p {
+    font-size: 14px;
+    margin-top: 4px;
+    color: #323232d8;
+  }
 }
